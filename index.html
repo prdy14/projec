@@ -10,8 +10,30 @@
 
 <body>
   <div>
-    <div class="bg-slate-200 h-1"></div>
     <div class="flex items-center justify-center">
+      <div class="sm:hidden group p-2  rounded-sm">
+        <div class="relative ml-2 group-hover:bg-slate-200 p-2 rounded-sm">
+          <div class="w-4 h-0.5 bg-slate-600 m-0.5"></div>
+          <div class="w-4 h-0.5 bg-slate-600 m-0.5"></div>
+          <div class="w-4 h-0.5 bg-slate-600 m-0.5"></div>
+        </div>
+        <div class="absolute hidden group-hover:block bg-white transition-all rounded-md z-10 ">
+          <ul>
+            <li class="hover:bg-slate-200 p-2 rounded-md">
+              <a href=" #About" class="  ">About</a>
+            </li>
+            <li class="hover:bg-slate-200 p-2 rounded-md">
+              <a href="#Teachers">Teachers</a>
+            </li>
+            <li class="hover:bg-slate-200 p-2 rounded-md">
+              <a href="#Reviews">Reviews</a>
+            </li>
+            <li class="hover:bg-slate-200 p-2 rounded-md">
+              <a href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <h3 class="flex-1 text-center p-2">Known</h3>
       <nav class="flex-2 hidden sm:flex md:justify-evenly">
         <a href="" class="hover:bg-slate-200 text-slate-600 p-2">Home</a>
@@ -352,7 +374,7 @@
               <input type="email" placeholder="Enter email address" class="rounded-sm h-9 mb-3 placeholder:pl-2">
               <textarea name="d" id="1" rows="6" placeholder="Tell me about your message"
                 class="mt-5 rounded-sm placeholder:pl-2"></textarea>
-              <button class="h-10 w-40 mt-5 bg-white rounded-3xl self-center">Send Message</button>
+              <button class="h-10 w-40 mt-5 bg-white rounded-3xl ">Send Message</button>
             </form>
           </div>
           <div class="hidden md:flex md:max-w-md"><img src="./contact-image.jpg" alt="" width="100%">
@@ -361,8 +383,8 @@
       </div>
     </div>
   </div>
-  <footer class="bg-black text-white">
-    <div class="flex flex-col sm:flex-row pt-10 justify-around pb-10">
+  <footer class="bg-black text-white ">
+    <div class="flex flex-col sm:flex-row pt-10 justify-around pb-10" id="Contact">
       <div class="ml-5 mt-5">
         <h1 class="text-xl font-semibold">Headquaters</h1>
         <p class="text-xs pt-1 pb-8">mendora, nizambad,telangana,india ,503219</p>
